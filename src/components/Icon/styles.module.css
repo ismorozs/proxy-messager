@@ -1,0 +1,9 @@
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.Icon {
+  fill: #A0A0A0;
+}

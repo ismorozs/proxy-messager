@@ -1,0 +1,12 @@
+.Avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 32px;
+  background: #bf52ff;
+  background: linear-gradient(180deg,rgba(191, 82, 255, 1) 0%, rgba(219, 158, 255, 1) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}

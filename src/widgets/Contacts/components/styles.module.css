@@ -1,0 +1,184 @@
+.Contacts {
+  background-color: white;
+  box-sizing: border-box;
+  height: 100%;
+  width: 393px;
+  border-right: 1px solid #0c0d0e0f;
+  padding: 16px 0;
+}
+
+.Contacts__Header {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.Contacts__AddButton {
+  width: 30px;
+  height: 30px;
+  background-color: #007aff;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.Contacts__AddButton::before {
+  content: " ";
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  height: 2px;
+  width: 14px;
+  background-color: white;
+}
+
+.Contacts__AddButton::after {
+  content: " ";
+  position: absolute;
+  top: 8px;
+  left: 14px;
+  height: 14px;
+  width: 2px;
+  background-color: white;
+}
+
+.Contacts__AddButton:hover {
+  background-color: #479fff;
+}
+
+.Contacts__Search {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  height: 36px;
+  background-color: #0909090d;
+  position: relative;
+}
+
+.Contacts__Search:has(:focus) .Contacts__SearchInput {
+  padding-right: 17px;
+}
+
+.Contacts__SearchInput {
+  background: none;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  width: 100%;
+}
+
+.Contacts__SearchClearButton {
+  position: absolute;
+  top: 11px;
+  right: 9px;
+  width: 14px;
+  height: 14px;
+  border-radius: 8px;
+  visibility: hidden;
+  background-color: #505050;
+  cursor: pointer;
+}
+
+.Contacts__SearchClearButton_active {
+  visibility: visible;
+}
+
+.Contacts__SearchClearButton::before {
+  content: " ";
+  width: 2px;
+  height: 12px;
+  background-color: white;
+  position: absolute;
+  top: 1px;
+  right: 6px;
+  transform: rotate(45deg);
+}
+
+.Contacts__SearchClearButton::after {
+  content: " ";
+  width: 2px;
+  height: 12px;
+  background-color: white;
+  position: absolute;
+  top: 1px;
+  right: 6px;
+  transform: rotate(-45deg);
+}
+
+.Contacts__List {
+  margin-top: 8px;
+}
+
+.ContactsItem {
+  height: 80px;
+  display: flex;
+  gap: 12px;
+  padding: 9px 16px;
+  cursor: pointer;
+}
+
+.ContactsItem:hover {
+  background-color: #f6f6f6;
+}
+
+.ContactsItem_active, .ContactsItem_active:hover {
+  background-color: rgba(213, 243, 254, 0.4);
+}
+
+.ContactsItem__Avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 32px;
+  background: #bf52ff;
+  background: linear-gradient(180deg,rgba(191, 82, 255, 1) 0%, rgba(219, 158, 255, 1) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.ContactsItem__Data {
+  position: relative;
+  flex: 1;
+}
+
+.ContactsItem__Name {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ContactsItem__Date {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 13px;
+  color: #06070885;
+  display: flex;
+  gap: 3px;
+}
+
+.ContactsItem__LastMessage {
+  padding-top: 8px;
+  font-size: 15px;
+  color: #06070885;
+}
+
+.ContactsItem__CheckIcon {
+  width: 20px;
+  height: 20px;
+  color: rgb(7, 132, 184);
+  position: relative;
+  bottom: 1px;
+}

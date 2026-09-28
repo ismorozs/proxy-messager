@@ -1,0 +1,32 @@
+.NavigationTabs {
+  box-sizing: border-box;
+  background-color: white;
+  height: 100%;
+  width: 77px;
+  border-right: 1px solid #0c0d0e0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.NavigationTab {
+  background-color: white;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+  cursor: pointer;
+  color: #505050;
+}
+
+.NavigationTab__Icon {
+  width: 24px;
+  height: 24px;
+}
+
+.NavigationTab__Icon_active {
+  fill: #505050;
+}

@@ -1,0 +1,156 @@
+.Chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Chat__Header {
+  height: 62px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  align-self: stretch;
+}
+
+.Chat__Avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.Chat__MessagesContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.Chat__Messages {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 700px;
+  align-self: center;
+}
+
+.Chat__MessageFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 732px;
+  padding: 0 16px;
+}
+
+.Chat__MessageForm {
+  display: flex;
+  height: 40px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding-right: 48px;
+  position: relative;
+  
+}
+
+.Chat__MessageFormInput {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #060708;
+  width: 100%;
+}
+
+.Chat__MessageFormSubmit {
+  box-sizing: border-box;
+  position: absolute;
+  display: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background-color: #007aff;
+  border: 0;
+  top: 6px;
+  right: 9px;
+  cursor: pointer;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.Chat__MessageFormSubmit_active {
+  display: flex;
+}
+
+.Chat__MessageFormSubmit:hover {
+  background-color: #479fff;
+}
+
+.Chat__MessageFormSubmitIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.ChatMessage {
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.ChatMessage_outgoing {
+  justify-content: flex-end;
+}
+
+.ChatMessage__Content {
+  background-color: white;
+  border-radius: 12px;
+  position: relative;
+}
+
+.ChatMessage_outgoing .ChatMessage__Content {
+  background-image: linear-gradient(239deg, rgb(233, 253, 255) 0%, rgb(233, 253, 255) 50%, rgb(233, 253, 255) 100%);
+}
+
+.ChatMessage_outgoing .ChatMessage__Text {
+  padding-right: 54px;
+}
+
+.ChatMessage_outgoing .ChatMessage__Date {
+  color: rgb(7, 132, 184);
+}
+
+.ChatMessage__Text {
+  padding: 6px 44px 8px 10px;
+  margin: 0;
+  font-size: 16px;
+  color: rgb(6, 7, 8);
+}
+
+.ChatMessage__Date {
+  position: absolute;
+  bottom: 5px;
+  right: 6px;
+  font-size: 11px;
+  color: #A0A0A0;
+  display: flex;
+  gap: 2px;
+}
+
+.ChatMessage__CheckIcon {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 1px;
+}
